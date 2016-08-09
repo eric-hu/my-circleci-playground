@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+  environment:
+dependencies:
+  pre:
+    # nothing for now
+  override:
+test:
+  override:
+    - docker build -t daluu/my-circleci-playground .
+deployment:
+  dev:
+    branch: master
+    commands:
+      
