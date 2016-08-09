@@ -8,9 +8,9 @@ dependencies:
   override:
 test:
   override:
-    - docker build -t daluu/my-circleci-playground .
+    # nothing for now
 deployment:
   dev:
     branch: master
     commands:
-      
+      - docker build -t daluu/my-circleci-playground .
