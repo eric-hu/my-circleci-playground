@@ -18,11 +18,11 @@ RUN mkdir -p /opt/monitoring
 # the copies fail in CircleCI, see https://discuss.circleci.com/t/failed-docker-build-at-a-copy-step-in-dockerfile/5440
 COPY requirements.txt /opt/monitoring
 COPY package.json /opt/monitoring
-COPY Gemfile /opt/monitoring
+#COPY Gemfile /opt/monitoring
 WORKDIR /opt/monitoring
 
 # Install dependencies & other support tooling
-RUN bundle install
+#RUN bundle install
 RUN pip install -r requirements.txt
 RUN npm install
 
