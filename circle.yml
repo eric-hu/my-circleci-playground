@@ -13,4 +13,4 @@ deployment:
   dev:
     branch: master
     commands:
-      - docker build -t daluu/my-circleci-playground my-circleci-playground
+      - docker build -t daluu/my-circleci-playground .
